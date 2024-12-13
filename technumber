@@ -1,0 +1,28 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main(){
+    int n;
+    cout<<"enter the number";
+    cin>>n;
+    int count=0;
+    while(n>0){
+        int num=n%10;
+        n=n/10;
+        count++;
+    }
+    int result=pow(10,count/2);
+    int a=n%result;
+    int b=n/result;
+    int sqr1=a*a;
+    int sqr2=b*b;
+    int sum=sqr1+sqr2;
+    if(sum==n){
+        cout<<"it is a tech number";
+    }
+    else{
+        cout<<"it is not a tech number";
+    }
+    
+    
+}
